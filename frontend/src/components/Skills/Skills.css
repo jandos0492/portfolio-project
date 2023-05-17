@@ -1,0 +1,158 @@
+#skills {
+  padding-top: 150px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  margin-top: -80px;
+}
+
+.skills.section {
+  padding: 50px 0;
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.skills-container {
+  /* min-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-heading {
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.skills-card {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #272C36;
+  transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-image {
+  width: 100px;
+  height: 100px;
+}
+
+.skill-title {
+  margin: 15px 0;
+  font-size: 1.2em;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .skills-card {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skills-heading {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .skill-image {
+    display: block;
+    margin-left: 45px;
+  }
+
+  .skills-card {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .skills-card {
+    max-width: 200px;
+  }
+
+  .skill-image {
+    padding-left: 15px;
+    max-width: 60px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .skills-card {
+    max-width: 160px;
+  }
+
+  .skill-image {
+    margin-left: 20px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .skill-image {
+    display: block;
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .skill-image {
+    display: block;
+    margin-left: 1px;
+  }
+
+  .skills-card {
+    max-width: 140px;
+    max-height: 170px;
+  }
+
+  .skills-heading {
+    font-size: 24px;
+  }
+
+  .skill-title {
+    font-size: 15px;
+  }
+}

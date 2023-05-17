@@ -1,0 +1,142 @@
+.about-section {
+  padding-top: 150px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  margin-top: -80px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-size: 2rem;
+  /* color: white; */
+  margin-bottom: 4rem;
+}
+
+.about-paragraph {
+  margin-bottom: 2rem;
+  max-width: 700px;
+  font-size: 20px;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.about-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.work-with-me {
+  background-color: #38a169;
+  color: white;
+}
+
+.work-with-me:hover {
+  background-color: #2f855a;
+}
+
+.see-past-work {
+  background-color: #2d3748;
+  color: #a0aec0;
+}
+
+.see-past-work:hover {
+  background-color: #4a5568;
+  color: white;
+}
+
+.about-image-container {
+  width: 90%;
+  max-width: 600px;
+  padding-right: 80px;
+  margin-left: 50px;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+
+/* @media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-text-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 4rem;
+  }
+} */
+
+@media (max-width: 1300px) {
+  .about-image {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .about-title {
+    font-size: 1.9rem;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    display: none;
+  };
+}
+
+@media (max-width: 520px) {
+  .about-button {
+    font-size: 14px
+  }
+
+  .about-paragraph {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,103 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-right: 80px;
+  padding-bottom: 150px;
+  padding-left: 80px;
+  margin-top: -80px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.contact-form {
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #2D3748;
+  border-radius: 8px;
+}
+
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-form .form-group {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.contact-form .form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #77674a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.email-sent {
+  font-size: 20px;
+  color: #B78D62;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .contact-form {
+    max-width: 400px;
+  }
+
+  .form-group {
+    max-width: 80%;
+  }
+
+  .email-sent {
+    font-size: 16px;
+  }
+}
