@@ -140,3 +140,9 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .about-title {
+    font-size: 18px;
+  }
+}

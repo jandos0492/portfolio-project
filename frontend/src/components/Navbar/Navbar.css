@@ -141,6 +141,22 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .title-font {
+    font-size: 20px;
+  }
+
+    header {
+      padding: 0 10px;
+      /* reduce the padding */
+      background-color: #2d3748;
+      position: sticky;
+      top: 0;
+      height: 80px;
+      z-index: 10;
+    }
+}
+
 @media screen and (min-width: 769px) {
   .hamburger-menu {
     display: none;

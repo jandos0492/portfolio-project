@@ -47,11 +47,13 @@ const Contact = () => {
     <section id="contact" >
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit} className="contact-form">
-      {emailSent && <p className="email-sent">Message sent successfully!</p>}
+        {emailSent && <p className="email-sent">Message sent successfully!</p>}
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
             type="text"
+            tabIndex="1"
+            id="name" // Added id here
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -61,6 +63,8 @@ const Contact = () => {
           <label htmlFor="email">Email</label>
           <input
             type="email"
+            tabIndex="2"
+            id="email" // Added id here
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -69,6 +73,8 @@ const Contact = () => {
         <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
+            id="message"
+            tabIndex="3"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required

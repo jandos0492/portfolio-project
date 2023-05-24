@@ -39,7 +39,7 @@ app.post("/send-email", async (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.send("Test route");
+  res.send("<h1>Test route</h1>");
 })
 
 const port = 3001;
