@@ -6,7 +6,7 @@
   "scripts": {
     "sequelize": "sequelize",
     "sequelize-cli": "sequelize-cli",
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "start:development": "node app.js",
     "start:production": "node app.js",
     "db:create": "npx sequelize-cli db:create",

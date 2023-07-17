@@ -60,7 +60,7 @@ app.get("/test", (req, res) => {
 });
 
 // Serve the index.html file for all GET requests
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/public", "index.html"));
 });
 
