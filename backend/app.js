@@ -6,7 +6,6 @@ const nodemailer = require("nodemailer");
 const morgan = require("morgan");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const { ValidationError } = require("sequelize");
 
 app.use(morgan("dev")); // HTTP request logger
 app.use(cookieParser()); // Parse cookies in requests
@@ -62,7 +61,7 @@ app.get("/test", (req, res) => {
 
 // Serve the index.html file for all GET requests
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/public", "index.html"));
 });
 
 const port = 8080;
