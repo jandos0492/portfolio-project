@@ -58,7 +58,12 @@ app.post("/send-email", async (req, res) => {
 
 app.get("/test", (req, res) => {
   res.send("<h1>Test route</h1>");
-})
+});
+
+// Serve the index.html file for all GET requests
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 const port = 8080;
 app.listen(port, () => console.log(`Server started on port http://localhost:${port}`));
