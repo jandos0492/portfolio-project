@@ -9,7 +9,6 @@
     "start": "node app.js",
     "start:development": "node app.js",
     "start:production": "node app.js",
-    "build": "node psql-setup-script.js",
     "db:create": "npx sequelize-cli db:create",
     "db:drop": "npx sequelize-cli db:drop",
     "db:migrate": "npx sequelize-cli db:migrate",
