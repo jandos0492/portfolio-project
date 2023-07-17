@@ -3,8 +3,16 @@ const path = require("path");
 const app = express();
 const helmet = require("helmet");
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+const morgan = require("morgan");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const { ValidationError } = require("sequelize");
+
+app.use(morgan("dev")); // HTTP request logger
+app.use(cookieParser()); // Parse cookies in requests
+app.use(express.json()); // Parse JSON request bodies
+app.use(express.urlencoded({ extended: false })); // Parse URL-encoded request bodies
+
 app.use(cors({ origin: ["http://localhost:8080", "https://zhandos-arinov-portfolio.onrender.com"] }));
 
 // helmet helps set a variety of headers to better secure your app
