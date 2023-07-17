@@ -2,7 +2,6 @@
   "name": "zhandos-arinov-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "render-postbuild": "npm run build --prefix frontend",
     "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
