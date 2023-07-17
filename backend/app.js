@@ -63,32 +63,4 @@ app.get("/test", (req, res) => {
 const port = 8080;
 app.listen(port, () => console.log(`Server started on port http://localhost:${port}`));
 
-// Error Handling Middleware
-app.use((_req, _res, next) => {
-  const err = new Error("The requested resource was not found.");
-  err.title = "Resource Not Found";
-  err.errors = ["The requested resource was not found."];
-  err.status = 404;
-  next(err);
-});
-
-app.use((err, _req, _res, next) => {
-  if (err instanceof ValidationError) {
-    err.errors = err.errors.map((error) => error.message);
-    err.title = "Validation Error";
-  }
-  next(err);
-});
-
-app.use((err, _req, res, _next) => {
-  res.status(err.status || 500);
-  console.error(err);
-  res.json({
-    title: err.title || "Server Error",
-    message: err.message,
-    errors: err.errors,
-    stack: isProduction ? null : err.stack,
-  });
-});
-
 module.exports = app;
