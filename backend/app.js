@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 const cors = require("cors");
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "http://localhost:8080", credentials: true }));
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
