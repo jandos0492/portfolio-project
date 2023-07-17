@@ -42,5 +42,5 @@ app.get("/test", (req, res) => {
   res.send("<h1>Test route</h1>");
 })
 
-const port = 3001;
+const port = 8080;
 app.listen(port, () => console.log(`Server started on port http://localhost:${port}`));
