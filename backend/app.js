@@ -6,11 +6,23 @@ const nodemailer = require("nodemailer");
 const morgan = require("morgan");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const { ValidationError } = require("sequelize");
+require('dotenv').config();
+
+
+const { environment } = require("./config");
+const isProduction = environment === "production";
 
 app.use(morgan("dev")); // HTTP request logger
 app.use(cookieParser()); // Parse cookies in requests
 app.use(express.json()); // Parse JSON request bodies
 app.use(express.urlencoded({ extended: false })); // Parse URL-encoded request bodies
+
+// Security Middleware
+if (!isProduction) {
+  // enable cors only in development
+  app.use(cors());
+};
 
 app.use(cors({ origin: ["http://localhost:8080", "https://zhandos-arinov-portfolio.onrender.com"] }));
 
@@ -27,7 +39,15 @@ app.use(
 
 app.use(express.static(path.join(__dirname, "public"))); // Serve static files from the "public" directory
 
-app.post("/send-email", async (req, res) => {
+
+
+
+const router = require("./routes/index");
+router.get("/test", (req, res) => {
+  res.send("<h1>Test route</h1>");
+});
+
+router.post("/send-email", async (req, res) => {
 
   const { name, email, message } = req.body;
 
@@ -37,6 +57,7 @@ app.post("/send-email", async (req, res) => {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS,
     },
+    debug: true, // Enable debugging
   });
 
   const mailOptions = {
@@ -54,15 +75,7 @@ app.post("/send-email", async (req, res) => {
     res.status(500).send("Error sending email: " + error.message);
   }
 });
-
-app.get("/test", (req, res) => {
-  res.send("<h1>Test route</h1>");
-});
-
-// Serve the index.html file for all GET requests
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/public", "index.html"));
-});
+app.use(router);
 
 const port = 8080;
 app.listen(port, () => console.log(`Server started on port http://localhost:${port}`));

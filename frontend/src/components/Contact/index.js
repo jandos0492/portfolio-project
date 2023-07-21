@@ -11,7 +11,7 @@ const Contact = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("/send-email", {
+      const response = await fetch("http://localhost:8080/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
