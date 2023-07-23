@@ -125,13 +125,21 @@
     grid-template-rows: repeat(6, 1fr);
   }
 
+  .skills-card {
+    max-width: 120px;
+  }
+
   .skill-image {
     display: block;
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   h1 {
     font-size: 20px
+  }
+
+  .skill-title {
+    font-size: 12px;
   }
 
 }
@@ -148,7 +156,7 @@
   }
 
   .skills-card {
-    max-width: 120px;
+    max-width: 120px !important;
     max-height: 170px;
   }
 
@@ -157,6 +165,6 @@
   }
 
   .skill-title {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
