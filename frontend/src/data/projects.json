@@ -1,0 +1,4 @@
+[
+  {"id": 1, "title": "Soccer Players", "image": "images/projects/soccer-players.jpg", "url": "https://soccer-players.onrender.com", "gif": "/images/projects/soccer-players-recording.gif"},
+  {"id": 2, "title": "NYC Permit Practice", "image": "images/projects/nyc-dmv-practice.jpg", "url": "https://nyc-practice-permit-test.onrender.com/", "gif": "/images/projects/nyc-dmv-practice.gif"}
+]

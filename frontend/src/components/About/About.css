@@ -18,6 +18,7 @@
   align-items: center;
   text-align: center;
   margin-bottom: 16px;
+  
 }
 
 .about-title {
@@ -78,23 +79,6 @@
   object-fit: cover;
 }
 
-
-
-/* @media (min-width: 768px) {
-  .about-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .about-text-container {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .about-title {
-    font-size: 4rem;
-  }
-} */
 
 @media (max-width: 1300px) {
   .about-image {
