@@ -1,0 +1,148 @@
+#projects {
+  padding-top: 210px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  margin-top: -80px;
+}
+
+
+.projects-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-heading {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #272C36;
+  transition: transform 0.3s ease;
+  width: auto;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-title {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: white;
+}
+
+@media screen and (max-width: 1180px) {
+  .projects-container {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-heading {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 880px) {
+
+  .projects-container {
+    margin-left: 80px;
+  }
+
+  .project-image {
+    display: block;
+  }
+
+  /* .project-card {
+    max-width: 300px;
+  } */
+}
+
+@media screen and (max-width: 750px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+
+  /* .project-image {
+    max-width: 100px;
+    max-height: 70px;
+  } */
+
+  .project-title {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+  /* .project-card {
+    max-width: 250px;
+  } */
+
+  /* .project-image {
+    display: block;
+  } */
+
+  .projects-container {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 20px !important
+  }
+
+  .project-title {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  /* .project-image {
+    display: block;
+  } */
+
+  /* .project-card {
+    max-width: 200px !important;
+    max-height: 170px;
+  } */
+
+  .projects-heading {
+    font-size: 18px;
+  }
+
+  .project-title {
+    font-size: 12px;
+  }
+}
