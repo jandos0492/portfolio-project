@@ -6,7 +6,6 @@ const nodemailer = require("nodemailer");
 const morgan = require("morgan");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const { ValidationError } = require("sequelize");
 require('dotenv').config();
 
 
