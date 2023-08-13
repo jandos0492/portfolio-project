@@ -53,7 +53,7 @@ const Contact = () => {
           <input
             type="text"
             tabIndex="1"
-            id="name" // Added id here
+            id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -64,7 +64,7 @@ const Contact = () => {
           <input
             type="email"
             tabIndex="2"
-            id="email" // Added id here
+            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required

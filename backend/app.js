@@ -40,12 +40,14 @@ app.use(express.static(path.join(__dirname, "public"))); // Serve static files f
 
 
 
-
+// test route
 const router = require("./routes/index");
 router.get("/test", (req, res) => {
   res.send("<h1>Test route</h1>");
 });
 
+
+// send email route (using the nodemailer for that feature)
 router.post("/send-email", async (req, res) => {
 
   const { name, email, message } = req.body;

@@ -32,9 +32,7 @@
   transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out;
   opacity: 0;
   text-decoration: none;
-  /* Removes underline */
   color: black;
-  /* Sets initial link color */
 }
 
 .contact-link:hover .link-text {
@@ -46,7 +44,6 @@
 
   .contact-link .fa {
       font-size: 1em;
-      /* the size you want when the viewport is 500px wide or less */
     }
   .link-text {
     opacity: 0;
