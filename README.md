@@ -1,6 +1,6 @@
 # Zhandos Arinov Portfolio
 
-Welcome to my portfolio website! This is where you can explore my journey, skills, and projects. Feel free to browse through the various sections to learn more about me and my work. The website is live and can be accessed at <a href="https://zhandos-arinov-portfolio.onrender.com" target="_blank">https://zhandos-arinov-portfolio.onrender.com</a>
+Welcome to my portfolio website! This is where you can explore my journey, skills, and projects. Feel free to browse through the various sections to learn more about me and my work. The website is live and can be accessed at <a href="https://zhandos-arinov-portfolio.onrender.com" target="_blank">zhandos-arinov-portfolio</a>
 
 
 ## Table of Contents
@@ -34,6 +34,6 @@ Here are some screenshots of my portfolio website:
 I would love to connect with you! Whether you're interested in discussing potential collaborations, have questions about my work, or just want to say hello, you can reach me through the following channels:
 
 - Email: jandos.webdev@gmail.com
-- LinkedIn: <a href="https://www.linkedin.com/in/zhandos-arinov-19046a156/" target="_blank">https://www.linkedin.com/in/zhandos-arinov</a>
-- Github: <a href="https://github.com/jandos0492" target="_blank">https://github.com/jandos0492</a>
+- LinkedIn: <a href="https://www.linkedin.com/in/zhandos-arinov-19046a156/" target="_blank">zhandos-arinov-linkedin</a>
+- Github: <a href="https://github.com/jandos0492" target="_blank">zhandos-arinov-github</a>
 
